@@ -4,8 +4,6 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { BackgroundBeams } from "./BgBeams";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
-import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -51,13 +49,23 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setCopied] = useState(false);
 
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: Animation || {},
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
   const handleCopy = () => {
-    navigator.clipboard.writeText("itsfaisalchowdhury@gmail.com");
+    const text = "hsu@jsmastery.pro";
+    navigator.clipboard.writeText(text);
     setCopied(true);
   };
 
-  const leftLists = ["VS Code", "Firebase"];
-  const rightLists = ["Figma", "GitHub"];
+  const leftLists = ["VS Code", "GitHub"];
+  const rightLists = ["Figma", "Vercel"];
   return (
     <div
       className={cn(
@@ -147,16 +155,7 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData: animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice",
-                    },
-                  }}
-                />
+                {/* <Lottie height={200} width={400} options={defaultOptions} /> */}
               </div>
               <MagicButton
                 title={copied ? "Email Copied" : "Copy my Email"}
