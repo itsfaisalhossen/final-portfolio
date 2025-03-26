@@ -1,5 +1,3 @@
-import { MdOutlineHome } from "react-icons/md";
-
 export const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "#about" },
@@ -252,14 +250,27 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/facebook.png",
+    link: "https://facebook.com",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    link: "https://linkedin.com",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/git.svg",
+    link: "https://github.com",
+  },
+  {
+    id: 4,
+    img: "/twit.svg",
+    link: "https://x.com",
+  },
+  {
+    id: 5,
+    img: "/instagram.png",
+    link: "https://instagram.com",
   },
 ];

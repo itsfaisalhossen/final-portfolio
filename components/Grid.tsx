@@ -35,7 +35,6 @@ const Grid = () => {
           )
         )}
       </BentoGrid>
-      {/* skills section are added */}
       <Skills />
     </section>
   );

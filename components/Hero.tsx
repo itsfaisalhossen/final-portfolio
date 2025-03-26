@@ -7,7 +7,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 
 const Hero = () => {
   return (
-    <section className="pb-20 pt-20 lg:pt-36">
+    <section className=" pt-20 lg:pt-36">
       {/* Spotlight Effect use to the background */}
       <div>
         <Spotlight
@@ -40,15 +40,17 @@ const Hero = () => {
             {/* Blending creativity and technology,  */}I craft user-friendly,
             responsive, and visually striking digital experiences that transform
             ideas into engaging, scalable, and high-performing web applications,
-            using JavaScript, ReactJs, NextJs TailwindCSS with 'MERN-STACK'.
+            using JavaScript, ReactJs, NextJs, TailwindCSS with 'MERN-STACK'.
           </p>
-          <a href="#projects">
-            <MagicButton
-              title="Show my Work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex items-center justify-center gap-8">
+            <a href="#projects">
+              <MagicButton
+                title="Show my Work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
