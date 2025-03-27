@@ -3,7 +3,6 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
-  // { name: "Testimonials", link: "#testimonials" },
 ];
 
 export const gridItems = [
@@ -250,27 +249,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/facebook.png",
-    link: "https://facebook.com",
-  },
-  {
-    id: 2,
     img: "/link.svg",
     link: "https://linkedin.com",
   },
   {
-    id: 3,
+    id: 2,
     img: "/git.svg",
     link: "https://github.com",
   },
   {
-    id: 4,
+    id: 3,
     img: "/twit.svg",
     link: "https://x.com",
-  },
-  {
-    id: 5,
-    img: "/instagram.png",
-    link: "https://instagram.com",
   },
 ];
