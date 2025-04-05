@@ -6,7 +6,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 
 const Hero = () => {
   return (
-    <section className="pt-28 lg:pt-36">
+    <section className="pt-28 md:pt-36 lg:pt-40">
       {/* Spotlight Effect use to the background */}
       <div>
         <Spotlight
@@ -36,16 +36,17 @@ const Hero = () => {
               alt=""
             />
           </div>
-          <h3 className="uppercase  tracking-widest text-center text-xs text-blue-100 max-w-90 hidden md:flex">
-            Building Digital Dreams with Stunning Precision
+          <h3 className="tracking-widest items-center text-center text-sm md:text-base text-blue-100 max-w-90 flex">
+            {/* Building Digital Dreams with Stunning Precision */}
+            <span className="text-sm md:text-lg">👋🏻</span>Hi i'm Faisal Hossen.
           </h3>
           <p className="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
-            Hi I'm Faisal Frontend Web Developer based in{" "}
+            Frontend Web Developer Based in{" "}
             <span className="text-xl md:text-2xl lg:text-3xl text-purple">
               Dhaka Bangladesh.
             </span>
           </p>
-          <p className="text-center leading-5 md:leading-7 tracking-normal mb-2 text-sm md:text-[18px] lg:text-[20px]">
+          <p className="text-center leading-5 md:leading-8 tracking-normal mb-2 text-sm md:text-[18px] lg:text-[20px]">
             I craft user-friendly, responsive, and visually striking digital
             experiences that transform ideas into engaging, scalable, and
             high-performing web applications, using JavaScript, ReactJs, NextJs,

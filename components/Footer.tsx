@@ -22,7 +22,7 @@ const Footer = () => {
           achieve your goals.
         </p>
       </div>
-      <form className="flex mt-10 flex-col relative items-center w-full md:w-[70%] mx-auto">
+      <form className="flex mt-10 flex-col relative items-center w-full md:w-[65%] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full md:gap-8">
           <input
             required
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <button
           type="submit"
-          className="border mt-5 md:mt-8 text-base flex items-center gap-2 font-semibold relative border-white/[0.2] text-black dark:text-white py-3 px-5 rounded-lg"
+          className="border mt-5 md:mt-10 text-base flex items-center gap-2 font-semibold relative border-white/[0.2] text-black dark:text-white py-3 px-5 rounded-lg"
         >
           <BsSendCheck size={16} />
           <span>Send Message</span>
