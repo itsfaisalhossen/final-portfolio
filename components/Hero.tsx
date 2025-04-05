@@ -6,7 +6,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 
 const Hero = () => {
   return (
-    <section className=" pt-20 lg:pt-36">
+    <section className="pt-28 lg:pt-36">
       {/* Spotlight Effect use to the background */}
       <div>
         <Spotlight
@@ -29,10 +29,10 @@ const Hero = () => {
         </div>
         {/* max-w-[89vw]md:max-w-2xl lg:max-w-[52vw] */}
         <div className="w-full md:w-10/12 lg:w-8/12 space-y-3 md:space-y-6  flex flex-col justify-center items-center">
-          <div className="flex items-center justify-center w-[100px] md:w-[140px] rounded-full h-[100px] md:h-[140px] border-2 border-white">
+          <div className="flex items-center justify-center w-[120px] md:w-[140px] rounded-full h-[120px] md:h-[140px]">
             <img
               src="/faisalHdev.jpg"
-              className="w-full object-cover rounded-full h-full"
+              className="w-full object-cover rounded-full border-white border-2 h-full"
               alt=""
             />
           </div>
@@ -45,7 +45,7 @@ const Hero = () => {
               Dhaka Bangladesh.
             </span>
           </p>
-          <p className="text-center leading-7 tracking-normal mb-2 text-sm md:text-[18px] lg:text-[20px]">
+          <p className="text-center leading-5 md:leading-7 tracking-normal mb-2 text-sm md:text-[18px] lg:text-[20px]">
             I craft user-friendly, responsive, and visually striking digital
             experiences that transform ideas into engaging, scalable, and
             high-performing web applications, using JavaScript, ReactJs, NextJs,

@@ -262,4 +262,9 @@ export const socialMedia = [
     img: "/twit.svg",
     link: "https://x.com",
   },
+  {
+    id: 4,
+    img: "/facebook.png",
+    link: "https://facebook.com",
+  },
 ];
