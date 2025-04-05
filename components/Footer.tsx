@@ -12,7 +12,7 @@ const Footer = () => {
           className="w-full h-full opacity-50 "
         />
       </div>
-      <div className="flex flex-col mx-auto w-[85%] gap-5 relative items-center">
+      <div className="flex flex-col mx-auto w-full md:w-[85%] lg:w-[65%] gap-5 relative items-center">
         <h1 className="heading">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
