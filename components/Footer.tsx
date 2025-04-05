@@ -25,14 +25,14 @@ const Footer = () => {
           action=""
           className="flex mt-4 flex-col items-center max-md:w-full"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-md: w-full md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full md:gap-8">
             <input
               required
               className="col-span1 block w-full px-4 py-4 text-white bg-black-200 border border-white/[0.2] rounded-lg focus:outline-none"
               type="text"
               name="fullName"
               id="fullName"
-              placeholder="Full Name"
+              placeholder="Your full name"
             />
             <input
               required
@@ -40,7 +40,7 @@ const Footer = () => {
               type="email"
               name="email"
               id="email"
-              placeholder="Your Email"
+              placeholder="Your email address"
             />
             <textarea
               required
@@ -52,10 +52,10 @@ const Footer = () => {
           </div>
           <button
             type="submit"
-            className="border text-sm mt-5 md:text-base flex items-center gap-2 font-semibold relative border-white/[0.2] text-black dark:text-white px-4 py-2 md:py-3 md:px-5 rounded-lg"
+            className="border mt-5 md:mt-8 text-base flex items-center gap-2 font-semibold relative border-white/[0.2] text-black dark:text-white py-3 px-5 rounded-lg"
           >
-            <span>Send Message</span>
             <BsSendCheck size={16} />
+            <span>Send Message</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
           </button>
         </form>
@@ -80,7 +80,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p className="md:text-base text-xs text-center md:font-normal font-light">
+        <p className="md:text-base text-xs text-center md:font-normal font-light text-gray-400">
           Copyright © 2025 FaisalHdev.
         </p>
       </div>
