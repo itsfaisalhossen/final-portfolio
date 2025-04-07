@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Projects = () => {
   return (
-    <section className="my-36" id="projects">
+    <section className="mt- lg:mt-36" id="projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>

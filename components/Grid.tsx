@@ -5,7 +5,7 @@ import Skills from "./Skills";
 
 const Grid = () => {
   return (
-    <section id="about" className="pt-20">
+    <section id="about" className="mt-16 lg:mt-36">
       <h1 className="text-center relative mx-auto z-50 w-full font-semibold md:font-bold text-4xl md:text-5xl">
         About <span className="text-purple"> Me</span>
       </h1>

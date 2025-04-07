@@ -3,7 +3,7 @@ import { BsSendCheck } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-5 md:pt-16 lg:pt-20 pb-10" id="contact">
+    <footer className="w-full mt-24 lg:mt-36 pb-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96 opacity-80">
         <img

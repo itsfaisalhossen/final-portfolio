@@ -1,12 +1,13 @@
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import MagicButton from "./ui/MagicButton";
-import { GoProjectSymlink } from "react-icons/go";
 import { ModeToggle } from "@/components/ModeToggle";
-
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <section className="pt-28 md:pt-36 lg:pt-40">
+    <section className="pt-28 w-full text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
       {/* Spotlight Effect use to the background */}
       <div>
         <Spotlight
@@ -28,35 +29,44 @@ const Hero = () => {
           <ModeToggle />
         </div>
         {/* max-w-[89vw]md:max-w-2xl lg:max-w-[52vw] */}
-        <div className="w-full md:w-10/12 lg:w-8/12 space-y-3 md:space-y-6  flex flex-col justify-center items-center">
-          <div className="flex items-center justify-center w-[120px] md:w-[140px] rounded-full h-[120px] md:h-[140px]">
+        <div className="w-full lg:w-[80%] space-y-2.5 lg:space-y-5  flex flex-col justify-center items-center">
+          <motion.div
+            className="flex items-center justify-center w-[120px] md:w-[130px] rounded-full h-[120px] md:h-[130px]"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1,
+              scale: { type: "spring", visualDuration: 0.4, bounce: 0.8 },
+            }}
+            // style={ball}
+          >
             <img
               src="/faisalHdev.jpg"
               className="w-full object-cover rounded-full border-white border-2 h-full"
-              alt=""
+              alt="hero_img"
             />
-          </div>
+          </motion.div>
           <h3 className="tracking-widest items-center text-center text-sm md:text-base text-blue-100 max-w-90 flex">
             {/* Building Digital Dreams with Stunning Precision */}
             <span className="text-sm md:text-lg">👋🏻</span>Hi i'm Faisal Hossen.
           </h3>
-          <p className="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+          <p className="text-center w-full md:w-[80%] mx-auto text-3xl font-bold md:text-4xl lg:text-5xl">
             Frontend Web Developer Based in{" "}
             <span className="text-xl md:text-2xl lg:text-3xl text-purple">
               Dhaka Bangladesh.
             </span>
           </p>
-          <p className="text-center leading-5 md:leading-8 tracking-normal mb-2 text-sm md:text-[18px] lg:text-[20px]">
+          <p className="w-full md:w-[75%] text-center leading-6 md:leading-8 tracking-normal mb-2 text-base md:text-[18px]">
             I craft user-friendly, responsive, and visually striking digital
             experiences that transform ideas into engaging, scalable, and
             high-performing web applications, using JavaScript, ReactJs, NextJs,
             TailwindCSS with 'MERN-STACK'.
           </p>
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex items-center justify-center">
             <a href="#projects">
               <MagicButton
                 title="Show my Work"
-                icon={<GoProjectSymlink size={18} className="rotate-90" />}
+                icon={<HiOutlineChevronDoubleDown size={16} />}
                 position="right"
               />
             </a>
