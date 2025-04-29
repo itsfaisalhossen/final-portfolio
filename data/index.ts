@@ -72,11 +72,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "SaaS App Landing Page (Frontend App)",
+    des: "Creative Header, Hero, Features, Pricing, _Faq, Testimonials, Download, Footer, Deployment",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    iconLists: ["/re.svg", "/tail.svg", "/sd.svg", "/gi.svg", "/ne.svg"],
+    link: "https://xorasaaspage.netlify.app",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const projects = [
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://brainbuddies-4add7.web.app",
   },
   {
     id: 3,

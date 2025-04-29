@@ -9,10 +9,10 @@ const Projects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 w-full mx-auto mt-8 md:mt-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 w-full mx-auto mt-8 md:mt-14">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
-            className="flex flex-col justify-between border w-full border-white/[0.2] rounded-2xl p-5 md:p-10 w[60%] mx-auto bg-black-100"
+            className="flex flex-col justify-between border w-full border-white/[0.2] rounded-2xl p-4 md:p-6 w[60%] mx-auto bg-black-100"
             key={id}
           >
             <div>
@@ -20,10 +20,10 @@ const Projects = () => {
                 <img src={img} alt="project_card_image" />
               </div>
               <div className="my-5 md:my-10">
-                <h3 className=" text-[18px] md:text-[32px] font-semibold">
+                <h3 className="text-[20px] md:text-[26px] font-semibold">
                   {title}
                 </h3>
-                <p className=" text-[12px] md:text-xl text-[#BEC1DD] my-4">
+                <p className="text-[15px] md:text-lg text-[#BEC1DD] my-4">
                   {des}
                 </p>
               </div>
@@ -33,15 +33,19 @@ const Projects = () => {
                 {iconLists.map((icon, idx) => (
                   <div
                     key={idx}
-                    className="rounded-full bg-black-100 -mr-2 bg-black100 p-2 border border-gray-700 flex items-center mx-auto w-8 md:w-full"
+                    className="rounded-full bg-black-100 -mr-2 bg-black100 p-2 border border-gray-700 flex items-center mx-auto w-8 md:w-10"
                   >
                     <img src={icon} alt="card_icon" />
                   </div>
                 ))}
               </div>
-              <button className="flex md:gap-2 items-center hover:text-white text-[#CBACF9]">
+              <a
+                href={link}
+                target="_blank"
+                className="flex md:gap-2 items-center hover:text-white text-[#CBACF9]"
+              >
                 Check Live Site <MdArrowOutward />
-              </button>
+              </a>
             </div>
           </div>
         ))}
