@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000319;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 26, 97);
+  border-radius: 50px;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -102,8 +115,6 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
-
-
 
 @layer base {
   * {
